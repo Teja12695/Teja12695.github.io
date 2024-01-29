@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body>div{
+    max-width: 75rem;
+    margin: 0 auto;  
+}
+
+header{
+    background-color:#163651;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    color: #F2EFE6;
+}
+
+header div{
+    padding-left: 1.25rem
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1.25rem;
+    padding-right: 1.25;
+    width: 7.5rem;
+}
+
+header ul li{  
+        transition: transform 1s;  
+}
+
+header ul li i{
+    color: #F2EFE6;
+    background-color: transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+header ul li:hover{
+    transform: rotate(360deg);
+
+}
+
+header div p{
+    font-size: 0.75rem;
+}
+
+header div p i{
+    color:#40A5A2 ;
+}
+
+navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: black;
+    height: 4.5rem;
+}
+
+navbar img{
+    height: 3.75rem;
+    padding-top: .625rem;
+    width: 2.5rem;;
+}
+
+navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1.25rem;
+    padding-right: 1.25rem;
+    
+}
+
+navbar ul li{
+    transition: all 1.5s;
+}
+
+navbar ul li:hover{
+    font-weight: 800;
+    transform: scale(1.1);
+    
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes rtol{
+    0%{transform: translateX(200px);}
+    100%{transform: translateX(0px);}
+}
+
+
+@keyframes ltor{
+    0%{transform: translateX(-200px);}
+    100%{transform: translateX(0px);}
+}
+
+main{
+    height: 41rem;
+    background-image:url("https://www.shutterstock.com/image-photo/team-diverse-partners-mature-latin-600nw-2346448085.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    justify-content: space-between;
+    
+}
+
+.msg{
+    height: 18.87rem;
+    width: 35rem;
+    margin-left: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: ltor 1.5s ease 1s 1 ;
+}
+
+form{
+    margin-top: 1.25rem;
+}
+
+.data{
+    width: 22.81rem;
+    height: 30.68rem;
+    background-color: #ffffff;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-right: 2.5rem;
+    animation: rtol 1.5s ease 1s 1 ;
+}
+
+#name,#email,#pps{
+    width: 19.5rem;
+    height: 2.5rem;
+    border-radius: 1.15rem;
+    margin-bottom: 0.75rem;
+    padding : 1.15rem;
+}
+
+#pps{
+    margin-bottom: 1.87rem;
+}
+
+span a{
+    color: aqua;
+}
+
+input[type="submit"]{
+    width: 6.25rem;
+    height: 2.18rem;
+    border-radius:1.15rem;
+    margin-top: 2.5rem;
+    background-color: #02274C;
+    color: #ffffff;
+    font-weight: 500;
+    box-shadow: 0rem 0rem 0.8rem #40A5A2;
+}
+
+input[type="submit"]:hover{
+    box-shadow: none;
+    outline: 2px solid #40A5A2;
+}
+
+label{
+    display: block;
+}
+
+div h1{
+    font-size: 3.43rem;
+    margin: 0rem;
+    font-weight: 700;
+}
+
+.msg p{
+    font-size: 1rem;
+    width: 25rem;
+    margin: 0rem;
+}
+
+div button{
+    width: 6.87rem;
+    height: 2.18rem;
+    border-radius: 1.15rem;
+    background-color: #40A5A2;
+    color: #ffffff;
+    font-weight: 500;
+    box-shadow: 0rem 0rem 1rem #40A5A2;
+    border: none;
+    cursor: pointer;
+}
+
+div button:hover{
+    box-shadow: none;
+    outline: 2px solid #F2EFE6;
+}
+
+
+footer{
+    height: 24.375rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+footer div *{
+    margin-bottom: 1.15rem;
+}
+
+footer div{
+    padding: 1.15rem;
+}
+
+
+footer div h4{
+    color:#163651;
+    font-size: 1.5rem;
+}
+
+footer span i{
+    display: inline-block;
+    font-size: 3.75rem;
+    background-color:green ;
+    width: 6.25rem;
+    padding: 0.125rem;
+    text-align: center;
+    border-radius: 50%;
+}
