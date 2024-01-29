@@ -238,3 +238,50 @@ footer span i{
     text-align: center;
     border-radius: 50%;
 }
+
+
+@media screen and (max-width:800px) {
+
+    header{
+        flex-direction: column;
+    }
+
+    navbar{
+        flex-direction: column;
+    }
+
+    navbar ul{
+       display: none;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .msg{
+        height: 15rem;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        display: block;
+
+    }
+
+    .msg p{
+        margin: auto;
+    }
+
+    .data{
+        height: 20rem;
+        position: relative;
+        bottom: 100px;
+        padding-left: 5px;
+        padding: 0%;
+        text-align: center;
+    }
+
+    #name,#email,#pps{
+        height: 5px;
+        margin: 0px;
+    }
+}
